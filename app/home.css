@@ -50,6 +50,13 @@ input {
   color: #000;
   border: 1px solid #000;
   border-radius: 9999px;
+  cursor: pointer;
+  &:disabled {
+    cursor: disabled;
+    pointer-events: none;
+    background: #ccc;
+    color: #999;
+  }
 }
 
 .form-error {
@@ -64,4 +71,5 @@ input {
   border-radius: 9999px;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
